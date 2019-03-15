@@ -94,7 +94,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 If you discover any security related issues, please email necenzurat@gmail.com instead of using the issue tracker.
 
 ## Credits
-s
+
 - [All Contributors](../../contributors)
 
 ## License
