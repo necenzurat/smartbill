@@ -1,0 +1,54 @@
+{
+    "name": "necenzurat/smartbill",
+    "description": "SmartBill API wrapper",
+    "keywords": [
+        "necenzurat",
+        "smartbill"
+    ],
+    "homepage": "https://github.com/necenzurat/smartbill",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Costin Moise",
+            "email": "necenzurat@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "5.8.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "3.8.*",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Necenzurat\\SmartBill\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Necenzurat\\SmartBill\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Necenzurat\\SmartBill\\SmartBillServiceProvider"
+            ],
+            "aliases": {
+                "SmartBill": "Necenzurat\\SmartBill\\SmartBillFacade"
+            }
+        }
+    }
+}
