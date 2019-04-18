@@ -72,7 +72,7 @@ try {
 
 </p>
 </details>
-[see the SmartBill demo app examples](http://api.smartbill.ro/extension-files/aplicatie_demo_php.zip) 
+see the SmartBill demo app examples: https://api.smartbill.ro/extension-files/aplicatie_demo_php.zip
 
 
 ### Testing
