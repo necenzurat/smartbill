@@ -22,11 +22,9 @@ composer require necenzurat/smartbill
 
 ```php
 
-$smartbill = new SmartBill;
-
-$invoice = array(
-    'companyVatCode'=> $companyVatCode,
-    'client' 		=> array(
+$invoice = [
+    'companyVatCode' => config('smartbill.vatCode'),
+    'client' 		=> [
         'name' 			=> "Intelligent IT",
         'vatCode' 		=> "RO12345678",
         'regCom' 		=> "",
@@ -35,16 +33,17 @@ $invoice = array(
         'city' 			=> "Sibiu",
         'country' 		=> "Romania",
         'email' 		=> "office@intelligent.ro",
-    ),
-    'issueDate' 	=> date('Y-m-d'),
-    'seriesName' 	=> $companyInvoiceSeries,
-    'isDraft' 		=> false,
-    'dueDate' 		=> date('Y-m-d', time() + 14*3600),
-    'mentions' 		=> "",
-    'observations' 	=> "",
-    'deliveryDate' 	=> date('Y-m-d', time() + 1*3600),
-    'products' 		=> array(
-        array(
+    ],
+    'issueDate'      => date('Y-m-d'),
+    'seriesName'     => config('smartbill.invoiceSeries'),
+    'isDraft'        => false,
+    'dueDate'		=> date('Y-m-d', time() + 3600 * 24 * 30),
+    'mentions'		=> '',
+    'observations'   => '',
+    'deliveryDate'   => date('Y-m-d', time() + 3600 * 24 * 10),
+    'precision'      => 2,
+    'products'		=> [
+        [
             'name' 				=> "Produs 1",
             'code' 				=> "ccd1",
             'isDiscount' 		=> false,
@@ -55,18 +54,21 @@ $invoice = array(
             'isTaxIncluded' 	=> true,
             'taxName' 			=> "Redusa",
             'taxPercentage' 	=> 9,
-            'isService' 		=> false,
-        ),
-    ),
-);
+            'isService'         => false,
+            'saveToDb'          => false,
+        ],
+    ],
+];
+
 echo 'Emitere factura simpla: ';
 try {
-   $output = $smartbill->createInvoice($invoice); //see docs for response
-   $invoiceNumber = $output['number'];
-   $invoiceSeries = $output['series'];
-   echo $invoiceSeries . $invoiceNumber;
-} catch (Exception $ex) {
-   echo $ex->getMessage();
+    $smartbill = new SmartBill();
+    $output = $smartbill->createInvoice($invoice); //see docs for response
+    $invoiceNumber = $output['number'];
+    $invoiceSeries = $output['series'];
+    echo $invoiceSeries . $invoiceNumber;
+} catch (\Exception $ex) {
+    echo $ex->getMessage();
 }
 ```
 
