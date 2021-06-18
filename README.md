@@ -61,7 +61,7 @@ $invoice = array(
 );
 echo 'Emitere factura simpla: ';
 try {
-   $output = $smarrtbill->createInvoice($invoice); //see docs for response
+   $output = $smartbill->createInvoice($invoice); //see docs for response
    $invoiceNumber = $output['number'];
    $invoiceSeries = $output['series'];
    echo $invoiceSeries . $invoiceNumber;
