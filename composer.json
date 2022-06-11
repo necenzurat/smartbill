@@ -1,11 +1,12 @@
 {
-    "name": "necenzurat/smartbill",
-    "description": "SmartBill API wrapper",
+    "name": "ahsanshabbir/smartbill",
+    "description": "SmartBill API wrapper compatible for laravel9",
     "keywords": [
         "necenzurat",
-        "smartbill"
+        "smartbill",
+        "ahsanshabbir"
     ],
-    "homepage": "https://github.com/necenzurat/smartbill",
+    "homepage": "https://github.com/AhsanShabbir/smartbill",
     "license": "MIT",
     "type": "library",
     "authors": [
