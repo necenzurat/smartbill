@@ -1,11 +1,12 @@
 {
-    "name": "necenzurat/smartbill",
-    "description": "SmartBill API wrapper",
+    "name": "ahsanshabbir/smartbill",
+    "description": "SmartBill API wrapper compatible for laravel9",
     "keywords": [
         "necenzurat",
-        "smartbill"
+        "smartbill",
+        "ahsanshabbir"
     ],
-    "homepage": "https://github.com/necenzurat/smartbill",
+    "homepage": "https://github.com/AhsanShabbir/smartbill",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -13,15 +14,20 @@
             "name": "Costin Moise",
             "email": "necenzurat@gmail.com",
             "role": "Developer"
+        },
+        {
+            "name": "Ahsan Shabbir",
+            "email": "ahsan.shabbir@wisevision.dev",
+            "role": "Developer"
         }
     ],
     "require": {
-        "php" : "^7.2.5|^8.0",
-        "illuminate/support": "~5.8.0|^6.0|^7.0|^8.0"
+        "php" : "^7.2.5|^8.0|^8.1",
+        "illuminate/support": "~5.8.0|^6.0|^7.0|^8.0|^9.0"
     },
     "require-dev": {
         "orchestra/testbench": "3.8.*",
-        "phpunit/phpunit": "^7.0"
+        "phpunit/phpunit": "^7.0|^8.1"
     },
     "autoload": {
         "psr-4": {
