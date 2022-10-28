@@ -15,7 +15,6 @@ return [
     */
 
     'username' => '',
-
     'token' => '',
 
     /*
