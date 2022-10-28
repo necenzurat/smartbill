@@ -28,6 +28,7 @@ return [
     | one account is supported in this package
     |
     */
+    
     'vatCode' => '',
 
     /*
@@ -41,8 +42,8 @@ return [
     |
     */
 
-    'invoiceSeries' => "TEST-INV",
-    'proformaSeries' => "TEST-PRO",
-    'receiptSeries' => "TEST-REC",
+    'invoiceSeries' => 'TEST-INV',
+    'proformaSeries' => 'TEST-PRO',
+    'receiptSeries' => 'TEST-REC',
 
 ];

@@ -20,8 +20,9 @@ class SmartBillServiceProvider extends ServiceProvider
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
         if ($this->app->runningInConsole()) {
+            //sdd(__DIR__);
             $this->publishes([
-                __DIR__.'/../config/config.php' => config_path('smartbill.php'),
+                __DIR__.'/../config/smartbill.php' => config_path('smartbill.php'),
             ], 'config');
 
             // Publishing the views.
@@ -50,7 +51,7 @@ class SmartBillServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'smartbill');
+        $this->mergeConfigFrom(__DIR__.'/../config/smartbill.php', 'smartbill');
 
         // Register the main class to use with the facade
         $this->app->singleton('smartbill', function () {
