@@ -1,18 +1,17 @@
 {
     "name": "ahsanshabbir/smartbill",
-    "description": "SmartBill API wrapper compatible for laravel9",
+    "description": "SmartBill API wrapper compatible for Laravel",
     "keywords": [
-        "necenzurat",
         "smartbill",
-        "ahsanshabbir"
+        "invoice"
     ],
-    "homepage": "https://github.com/AhsanShabbir/smartbill",
+    "homepage": "https://github.com/necezurat/smartbill",
     "license": "MIT",
     "type": "library",
     "authors": [
         {
-            "name": "Costin Moise",
-            "email": "necenzurat@gmail.com",
+            "name": "Costin 'necenzurat' Moise",
+            "email": "necenzurat+smartbill@gmail.com",
             "role": "Developer"
         },
         {
