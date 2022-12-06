@@ -123,7 +123,6 @@ class SmartBillCloudRestClient
         }
 
         $ch = $this->_cURL($url, $data, $request, $headAccept);
-        dd($ch);
         $return = curl_exec($ch);
         $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
         curl_close($ch);
