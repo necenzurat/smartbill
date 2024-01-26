@@ -7,11 +7,18 @@ Simple SmartBill API integration for Laravel.
 
 ## Installation
 
-You can install the package via composer:
+Step 1. Install the package via Composer:
 
 ```bash
 composer require necenzurat/smartbill
 ```
+
+Step 2. Publish the config file:
+```bash
+php artisan vendor:publish --provider="Necenzurat\SmartBill\SmartBillServiceProvider" --tag="config"
+```
+
+Step 3. Enter your account details in the `config/smartbill.php` file (API username, key, VAT code etc.).
 
 ## Usage
 
