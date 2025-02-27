@@ -1,5 +1,5 @@
 {
-    "name": "ahsanshabbir/smartbill",
+    "name": "necenzurat/smartbill",
     "description": "SmartBill API wrapper compatible for Laravel",
     "keywords": [
         "smartbill",
@@ -22,12 +22,11 @@
     ],
     "require": {
         "php" : "^7.2.5|^8.0|^8.1|^8.2",
-        "illuminate/support": "~5.8.0|^6.0|^7.0|^8.0|^9.0|^10.0|^12.0"
+        "illuminate/container": "^8.12|^9.0|^10.0|^11.0|^12.0",
         
     },
     "require-dev": {
-        "orchestra/testbench": "3.8.*",
-        "phpunit/phpunit": "^7.0|^8.1"
+        "phpunit/phpunit": "^7.0|^8.1|^9.4|^10.1|^11.5"
     },
     "autoload": {
         "psr-4": {
