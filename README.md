@@ -79,7 +79,13 @@ try {
 
 </p>
 </details>
-see the SmartBill demo app examples: https://api.smartbill.ro/extension-files/aplicatie_demo_php.zip
+
+### Full documentation
+
+- Start here: `docs/index.md`
+- Browse online examples in the `docs/examples` folder.
+
+See the SmartBill demo app examples: https://api.smartbill.ro/extension-files/aplicatie_demo_php.zip
 
 
 ### Testing
